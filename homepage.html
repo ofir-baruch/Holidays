@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8" />
+    <title>אתר בנושא חגים ומועדים</title>
+    <meta name="description" content="אתר בנושא חגים ומועדים" />
+    <meta name="keywords" content="עבודה מסכמת , תכנות 3" />
+    <meta name="author" content="אופיר ברוך ואנסטסיה זולוטוחין" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="styles/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/bootstrap.bundle.min.js"></script>
+    <script src="jScripts/javascript.js"></script>
+
+</head>
+
+<body lang="he" dir="rtl">
+    <!-- תפריט ניווט -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mt-3 mt-md-0" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="homepage.html">דף הבית</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="TuBisvat.html">טו בשבט</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Family.html">יום המשפחה</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Purim.html">פורים</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Passover.html">פסח</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5">
+        <!-- מנגנון חיפוש -->
+        <div class="row mb-5 gy-2">
+            <div class="col-md-4">
+                <label class="d-none" for="floatingInput">מציאת חג</label>
+                <input type="text" class="form-control" id="search-box" placeholder="מציאת חג">
+            </div>
+            <div class="col-md-2 ps-2 pe-md-4">
+                <button id="search-btn" type="submit" class="btn btn-outline-secondary w-100">חיפוש</button>
+            </div>
+        </div>
+
+        <!-- כרטיסיות חגים -->
+        <div class="row gx-sm-5 gy-5 projects-cards">
+            <div class="card-wrapper col-lg-3 col-sm-6 col-12">
+                <div class="card">
+                    <img src="images/TuBisvat.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-info">טו בשבט</h5>
+                        <p class="card-text">חל ב-ט"ו (15) בשבט</p>
+                        <a href="TuBisvat.html"
+                            class="btn btn-outline-secondary position-absolute bottom-0  mb-2">לעמוד</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrapper col-lg-3 col-sm-6 col-12">
+                <div class="card">
+                    <img src="images/Family.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">יום המשפחה</h5>
+                        <p class="card-text">חל ב-ל (30) בשבט</p>
+                        <a href="Family.html"
+                            class="btn btn-outline-secondary position-absolute bottom-0 mb-2">לעמוד</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrapper col-lg-3 col-sm-6 col-12">
+                <div class="card">
+                    <img src="images/Purim.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">פורים</h5>
+                        <p class="card-text">חל ב-י"ד (14) באדר</p>
+                        <a href="Purim.html" class="btn btn-outline-secondary position-absolute bottom-0 mb-2">לעמוד</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrapper col-lg-3 col-sm-6 col-12">
+                <div class="card">
+                    <img src="images/Passover.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">פסח</h5>
+                        <p class="card-text">חל מ-ט"ו (15) בניסן עד כ"א (21) בניסן</p>
+                        <a href="Passover.html"
+                            class="btn btn-outline-secondary position-absolute bottom-0 mb-2">לעמוד</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <br />
+    <br />
+
+    <!-- כפתור סיום למידה -->
+    <button id="success-download-btn" type="button" class="btn btn-outline-secondary col-12">
+        סיימתי ללמוד על כל החגים
+    </button>
+
+    <!-- טוסט התראה -->
+    <div class="toast-container button-10 start-0 p-3" id="toastPlacement">
+        <div id="toast-download" class="toast align-items-center text-bg-success border-0" role="alert"
+            aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    כל הכבוד
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+<br/>
+<br/>
+<br/>
+<br/>
+    <footer>
+        <p class="fs-7 ms-2 col-7">אתר זה נוצר על ידי אופיר ברוך ואנסטסיה זולוטוחין במסגרת קורס תכנות 3</p>
+    </footer>
+
+
+</body>
+
+</html>
